@@ -1,0 +1,182 @@
+[
+ {
+  "file": "01_bestand.svg",
+  "title": "Bestand und Prämie je Policenjahr",
+  "kind": "Gestapeltes Säulendiagramm"
+ },
+ {
+  "file": "02_frequenz_merkmale.svg",
+  "title": "Schadenfrequenz je Tarifmerkmal mit Konfidenzintervall",
+  "kind": "Punktdiagramm mit Fehlerbalken"
+ },
+ {
+  "file": "03_heatmap_region_klasse.svg",
+  "title": "Frequenz-Heatmap Region × Risikoklasse",
+  "kind": "Heatmap mit Werten"
+ },
+ {
+  "file": "04_schwere_violin.svg",
+  "title": "Schadenschwere je Schadenart",
+  "kind": "Box-/Violinplot (log)"
+ },
+ {
+  "file": "05_meldeverzug.svg",
+  "title": "Meldeverzug (Histogramm und ECDF)",
+  "kind": "Histogramm + Verteilungsfunktion"
+ },
+ {
+  "file": "06_glm_relativitaeten.svg",
+  "title": "GLM-Relativitäten mit Konfidenzintervallen",
+  "kind": "Faktor-/Forest-Plot"
+ },
+ {
+  "file": "07_lift_kalibrierung.svg",
+  "title": "Lift-Chart und Kalibrierungsplot (Holdout)",
+  "kind": "Lift-Chart + Kalibrierungsplot"
+ },
+ {
+  "file": "08_lorenz.svg",
+  "title": "Lorenzkurve und Gini-Koeffizient",
+  "kind": "Lorenzkurve"
+ },
+ {
+  "file": "09_dreieck_incurred.svg",
+  "title": "Abwicklungsdreieck Schadenaufwand (Incurred, brutto, T€)",
+  "kind": "Abwicklungsdreieck als Heatmap"
+ },
+ {
+  "file": "10_dreieck_paid.svg",
+  "title": "Abwicklungsdreieck Zahlungen (Paid, brutto, T€)",
+  "kind": "Abwicklungsdreieck als Heatmap"
+ },
+ {
+  "file": "11_linkratios.svg",
+  "title": "Abwicklungsfaktoren je Anfalljahr",
+  "kind": "Linienplot der Link Ratios"
+ },
+ {
+  "file": "12_muster.svg",
+  "title": "Abwicklungsmuster Paid vs. Incurred",
+  "kind": "Abwicklungsmuster-Kurven"
+ },
+ {
+  "file": "13_methodenvergleich.svg",
+  "title": "Methodenvergleich CL / BF / Referenz",
+  "kind": "Gruppiertes Säulendiagramm mit Fehlerbalken"
+ },
+ {
+  "file": "14_backtest.svg",
+  "title": "Backtest Schätzung vs. Referenz",
+  "kind": "Abweichungsplot"
+ },
+ {
+  "file": "15_residuen.svg",
+  "title": "Residuendiagnostik Chain-Ladder (Paid)",
+  "kind": "Residuenplots"
+ },
+ {
+  "file": "16_reserveverteilung.svg",
+  "title": "Verteilung der Schadenreserve (Mack, lognormal)",
+  "kind": "Dichte mit Quantilen"
+ },
+ {
+  "file": "17_fanchart.svg",
+  "title": "Fan Chart künftiger Reservezahlungen",
+  "kind": "Fan Chart / Unsicherheitsband"
+ },
+ {
+  "file": "18_schwere_tail.svg",
+  "title": "Schadenhöhe: Histogramm, QQ-Plot, Mean Excess",
+  "kind": "Verteilungsdiagnostik"
+ },
+ {
+  "file": "19_gesamtschaden_ep.svg",
+  "title": "Gesamtschadenverteilung und Überschreitungskurve",
+  "kind": "Dichte + EP-Kurve"
+ },
+ {
+  "file": "20_xl_schicht.svg",
+  "title": "Schäden relativ zur XL-Priorität",
+  "kind": "Sortiertes Streudiagramm mit Schichtgrenzen"
+ },
+ {
+  "file": "21_marimekko.svg",
+  "title": "Marimekko Prämie und Schadenquote",
+  "kind": "Marimekko-/Mosaikdiagramm"
+ },
+ {
+  "file": "22_schadenquote.svg",
+  "title": "Schadenquote je Anfalljahr",
+  "kind": "Säulen + Linien"
+ },
+ {
+  "file": "23_zinskurve.svg",
+  "title": "Zinsstrukturkurve und Zeitreihe",
+  "kind": "Linien / Zeitreihe"
+ },
+ {
+  "file": "24_cashflow_barwert.svg",
+  "title": "Zahlungsstrom nominal vs. Barwert",
+  "kind": "Liquiditätsleiter / Säulen"
+ },
+ {
+  "file": "25_wasserfall.svg",
+  "title": "Wasserfall Basis zu kombiniertem Stress",
+  "kind": "Wasserfall-/Brückendiagramm"
+ },
+ {
+  "file": "26_tornado.svg",
+  "title": "Tornado-Sensitivitätsdiagramm",
+  "kind": "Tornado-Diagramm"
+ },
+ {
+  "file": "27_szenariomatrix_reverse.svg",
+  "title": "Szenariomatrix und Reverse-Stress-Kontur",
+  "kind": "Heatmap + Konturplot"
+ },
+ {
+  "file": "28_scr_standardformel.svg",
+  "title": "SCR Prämien-/Reserverisiko und Korrelationsmatrix",
+  "kind": "Wasserfall + Korrelations-Heatmap"
+ },
+ {
+  "file": "29_solvenzpfad.svg",
+  "title": "Projektion der Bedeckungsquote",
+  "kind": "Trajektorie / Zeitreihe"
+ },
+ {
+  "file": "30_kachelkarte.svg",
+  "title": "Regionale Kachelkarte Exposition / Schadenquote",
+  "kind": "Kachel-/Geokarte"
+ },
+ {
+  "file": "31_kumulereignisse.svg",
+  "title": "Kumulereignisse brutto/netto",
+  "kind": "Gestapelte Balken horizontal"
+ },
+ {
+  "file": "32_risiko_heatmap.svg",
+  "title": "Qualitative Risiko-Heatmap",
+  "kind": "Risikomatrix"
+ },
+ {
+  "file": "33_dq_matrix.svg",
+  "title": "Datenqualitäts-Prüfmatrix",
+  "kind": "Ampel-/Prüfmatrix"
+ },
+ {
+  "file": "34_sankey.svg",
+  "title": "Sankey-Fluss Prämie → Schaden → Zahlung/Reserve",
+  "kind": "Sankey-Diagramm"
+ },
+ {
+  "file": "35_credibility.svg",
+  "title": "Credibility-Gewichtung nach Region",
+  "kind": "Säulen mit Credibility-Faktoren"
+ },
+ {
+  "file": "36_frequenztrend.svg",
+  "title": "Frequenztrend je Sparte",
+  "kind": "Small Multiples / Zeitreihe mit Band"
+ }
+]

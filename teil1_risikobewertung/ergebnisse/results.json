@@ -1,0 +1,550 @@
+{
+ "n_policies": 2000,
+ "n_exposure_rows": 12000,
+ "exposure_years": 10092.41884,
+ "premium": 3473948.92,
+ "n_claims": 738,
+ "incurred_cut": 2569525.24,
+ "paid_cut": 2336691.5,
+ "open_claims": 238,
+ "freq_total": 0.07312419467521822,
+ "freq_by_band": {
+  "1": 5.49,
+  "2": 5.23,
+  "3": 7.44,
+  "4": 8.52,
+  "5": 11.03
+ },
+ "delay_q90": 120.30000000000007,
+ "glm_coef": {
+  "const": [
+   0.049,
+   0.032,
+   0.074
+  ],
+  "product_property": [
+   0.844,
+   0.657,
+   1.083
+  ],
+  "region_east": [
+   0.828,
+   0.601,
+   1.141
+  ],
+  "region_north": [
+   1.501,
+   1.139,
+   1.979
+  ],
+  "region_south": [
+   1.23,
+   0.925,
+   1.635
+  ],
+  "region_west": [
+   1.332,
+   1.005,
+   1.765
+  ],
+  "risk_band_2": [
+   1.06,
+   0.731,
+   1.538
+  ],
+  "risk_band_3": [
+   1.407,
+   0.992,
+   1.995
+  ],
+  "risk_band_4": [
+   1.601,
+   1.117,
+   2.293
+  ],
+  "risk_band_5": [
+   1.929,
+   1.313,
+   2.832
+  ],
+  "driver_age_band_40_59": [
+   0.681,
+   0.524,
+   0.885
+  ],
+  "driver_age_band_60_plus": [
+   0.912,
+   0.669,
+   1.244
+  ],
+  "driver_age_band_under_25": [
+   1.239,
+   0.895,
+   1.716
+  ],
+  "asset_age_band_16_plus": [
+   1.025,
+   0.792,
+   1.326
+  ],
+  "asset_age_band_6_15": [
+   1.071,
+   0.876,
+   1.309
+  ]
+ },
+ "glm_holdout_AE": 1.0942558646811864,
+ "glm_dev_model": 1419.073152406423,
+ "glm_dev_null": 1455.1533565372197,
+ "gini": 0.20120775904804655,
+ "elr_apriori": 0.5951501893621421,
+ "f_inc": [
+  1.3379,
+  1.003,
+  1.0077,
+  1.0,
+  0.9983,
+  1.004
+ ],
+ "f_paid": [
+  2.7985,
+  1.4093,
+  1.2505,
+  1.0,
+  1.1512,
+  1.0711
+ ],
+ "reserve_table": {
+  "2019": {
+   "Prämie": 531886.94,
+   "Incurred": 294404.71,
+   "Paid": 292889.2,
+   "CL_inc": 294404.71,
+   "CL_paid": 292889.2,
+   "BF": 294404.71,
+   "Truth": 294529.39,
+   "Mack_SE": 0.0,
+   "Reserve_CL": 1515.51,
+   "IBNR_CL": 0.0
+  },
+  "2020": {
+   "Prämie": 547352.56,
+   "Incurred": 369423.6,
+   "Paid": 367897.04,
+   "CL_inc": 370918.15,
+   "CL_paid": 394057.23,
+   "BF": 370736.18,
+   "Truth": 369575.04,
+   "Mack_SE": 919.27,
+   "Reserve_CL": 3021.11,
+   "IBNR_CL": 1494.55
+  },
+  "2021": {
+   "Prämie": 569992.22,
+   "Incurred": 315469.56,
+   "Paid": 303800.51,
+   "CL_inc": 316217.71,
+   "CL_paid": 374617.11,
+   "BF": 316272.16,
+   "Truth": 316502.37,
+   "Mack_SE": 1065.89,
+   "Reserve_CL": 12417.2,
+   "IBNR_CL": 748.15
+  },
+  "2022": {
+   "Prämie": 589145.45,
+   "Incurred": 635271.54,
+   "Paid": 604376.48,
+   "CL_inc": 636778.12,
+   "CL_paid": 745258.02,
+   "BF": 636101.11,
+   "Truth": 635209.27,
+   "Mack_SE": 1816.37,
+   "Reserve_CL": 32401.64,
+   "IBNR_CL": 1506.58
+  },
+  "2023": {
+   "Prämie": 607641.47,
+   "Incurred": 460611.33,
+   "Paid": 410698.81,
+   "CL_inc": 465257.57,
+   "CL_paid": 633314.58,
+   "BF": 464222.78,
+   "Truth": 459362.23,
+   "Mack_SE": 4361.97,
+   "Reserve_CL": 54558.76,
+   "IBNR_CL": 4646.24
+  },
+  "2024": {
+   "Prämie": 627930.28,
+   "Incurred": 494344.5,
+   "Paid": 357029.46,
+   "CL_inc": 500843.11,
+   "CL_paid": 775907.99,
+   "BF": 499193.55,
+   "Truth": 496749.96,
+   "Mack_SE": 4750.16,
+   "Reserve_CL": 143813.65,
+   "IBNR_CL": 6498.61
+  }
+ },
+ "tot": {
+  "Prämie": 3473948.92,
+  "Incurred": 2569525.24,
+  "Paid": 2336691.5,
+  "CL_inc": 2584419.3744617724,
+  "CL_paid": 3216044.127143333,
+  "BF": 2580930.498658512,
+  "Truth": 2571928.26,
+  "Reserve_CL": 247727.87446177285,
+  "IBNR_CL": 14894.134461772803
+ },
+ "mack_total_se_approx": 6846.255061125428,
+ "case_reserve_cut": 232833.74000000022,
+ "paid_pct_y1": 20.361054797882296,
+ "paid_resid_by_cal": {
+  "2020": -8.5,
+  "2021": -3.6,
+  "2022": -8.4,
+  "2023": 2.9,
+  "2024": -4.5,
+  "2025": 5.9
+ },
+ "res_mean": 247727.8744617724,
+ "res_cv": 0.02763619183347853,
+ "res_q995": 265986.2330234727,
+ "res_q75": 252325.8621333252,
+ "f_paid_ex_diag": [
+  2.7323,
+  1.345,
+  1.1991,
+  1.0,
+  1.0829,
+  1.0
+ ],
+ "cashflows": {
+  "2026": 122775.05406040214,
+  "2027": 77722.48365248866,
+  "2028": 21772.388030268023,
+  "2029": 25457.948718613563
+ },
+ "sev_ln": {
+  "sigma": 0.9229585370902738,
+  "mu": 7.675732224642823,
+  "mean_emp": 3551.21092,
+  "max": 50773.25
+ },
+ "gpd": {
+  "u": 7777.2880000000005,
+  "xi": 0.29076306023321774,
+  "beta": 5508.643041007889
+ },
+ "mc_lambda": {
+  "motor": 85.16990963396059,
+  "property": 33.98980962164168
+ },
+ "mc_sev": {
+  "motor": [
+   0.6873026234323731,
+   7.325534981727416
+  ],
+  "property": [
+   0.789839441555806,
+   8.373584091185613
+  ]
+ },
+ "cat": {
+  "events_per_year": 0.5,
+  "claims_per_event": 11.333333333333334,
+  "event_loss": {
+   "CAT-2020-FLOOD-WEST": 143537.86,
+   "CAT-2022-STORM-NORTH": 275316.0,
+   "CAT-2024-HAIL-SOUTH": 116135.4
+  }
+ },
+ "mc": {
+  "gross_mean": 460275.318364511,
+  "net_mean": 455219.5087083027,
+  "gross_var995": 1028044.7944913777,
+  "gross_tvar995": 1140382.5991072177,
+  "net_var995": 984236.0869868019,
+  "net_tvar995": 1091014.6162926632,
+  "prem24": 627930.28,
+  "N": 20000
+ },
+ "n_ceded_claims": 2,
+ "lr_by_year": {
+  "2019": 55.4,
+  "2020": 67.8,
+  "2021": 55.5,
+  "2022": 108.1,
+  "2023": 76.6,
+  "2024": 79.8
+ },
+ "bel_disc": 239585.5429452645,
+ "duration": 1.273130081059567,
+ "scen": {
+  "BASE": {
+   "name": "Synthetischer Basisfall",
+   "result": 175378.81735275307,
+   "net_var995": 980580.0737123741,
+   "reserve_disc": 239585.5429452645
+  },
+  "ST-CLAIMS-INFLATION": {
+   "name": "Schadeninflation",
+   "result": 104992.55047576054,
+   "net_var995": 1099636.800239745,
+   "reserve_disc": 263544.097239791
+  },
+  "ST-RATE-UP": {
+   "name": "Zinsanstieg",
+   "result": 183175.764309481,
+   "net_var995": 997397.6672952422,
+   "reserve_disc": 233810.60186657126
+  },
+  "ST-CAT": {
+   "name": "Naturgefahren-Kumul",
+   "result": -7235.666814112687,
+   "net_var995": 2104880.3459627503,
+   "reserve_disc": 239585.5429452645
+  },
+  "ST-COMBINED": {
+   "name": "Kombinierter Stress",
+   "result": -14127.245858240174,
+   "net_var995": 1499459.2521179637,
+   "reserve_disc": 254041.18435202935
+  }
+ },
+ "waterfall": {
+  "Basis": 173551.1461248285,
+  "Schadeninflation +8 %": -53729.292635543155,
+  "Zins +150 bp": 5212.492343759164,
+  "Kumul ×2": -95663.63651407533,
+  "Storno +20 %": -47125.767092266
+ },
+ "waterfall_end": -17755.057773296838,
+ "tornado": {
+  "Zins ±200 bp": [
+   2826.5581327074033,
+   -6995.7483802475035
+  ],
+  "Frequenz +10 % / −10 %": [
+   -39138.984930055216,
+   34334.5131470795
+  ],
+  "Storno +20 % / −20 %": [
+   -53723.74634025566,
+   51633.30462982092
+  ],
+  "Schadeninflation ±10 %": [
+   -71399.46077967645,
+   69206.00863025768
+  ],
+  "Kumul ×3 / ×0": [
+   -179062.66240354005,
+   87989.25358421518
+  ]
+ },
+ "matrix": {
+  "infl": [
+   0,
+   2,
+   4,
+   6,
+   8,
+   10,
+   12,
+   15
+  ],
+  "catm": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "M": [
+   [
+    261218.0,
+    249793.0,
+    239863.0,
+    226983.0,
+    215562.0,
+    203849.0,
+    192207.0,
+    173713.0
+   ],
+   [
+    175303.0,
+    159698.0,
+    143056.0,
+    133027.0,
+    113253.0,
+    101641.0,
+    93232.0,
+    69431.0
+   ],
+   [
+    78364.0,
+    64062.0,
+    57611.0,
+    46881.0,
+    16860.0,
+    9639.0,
+    -1843.0,
+    -23373.0
+   ],
+   [
+    -11896.0,
+    -18628.0,
+    -41699.0,
+    -48484.0,
+    -79301.0,
+    -96431.0,
+    -93164.0,
+    -136988.0
+   ],
+   [
+    -96757.0,
+    -117161.0,
+    -140061.0,
+    -146287.0,
+    -162408.0,
+    -181982.0,
+    -209515.0,
+    -235898.0
+   ],
+   [
+    -169507.0,
+    -215360.0,
+    -222955.0,
+    -258791.0,
+    -258069.0,
+    -283843.0,
+    -308599.0,
+    -324261.0
+   ]
+  ]
+ },
+ "scr": {
+  "segments": {
+   "Kfz-Haftpflicht": {
+    "V": 193536.4351637795,
+    "sigma": 0.09073172083122454,
+    "SCR_standalone": 52679.68141785129
+   },
+   "Sonstige Kfz": {
+    "V": 270072.8590025316,
+    "sigma": 0.07356456386920837,
+    "SCR_standalone": 59603.37625629434
+   },
+   "Feuer/Sach": {
+    "V": 412048.8602954619,
+    "sigma": 0.07615516932100713,
+    "SCR_standalone": 94138.95217298674
+   }
+  },
+  "sigma_total": 0.05849741840150502,
+  "SCR_prem_res": 153671.22431472017,
+  "div": 52750.78553241221,
+  "share_liab": 0.4174559000414516,
+  "cat_proxy": 525739.0443377332
+ },
+ "own_funds_assumption": 1500000,
+ "scr_total_nl": 583448.2575432488,
+ "events": {
+  "CAT-2020-FLOOD-WEST": {
+   "n": 10,
+   "loss": 143537.86,
+   "ced": 0.0
+  },
+  "CAT-2022-STORM-NORTH": {
+   "n": 15,
+   "loss": 275316.0,
+   "ced": 0.0
+  },
+  "CAT-2024-HAIL-SOUTH": {
+   "n": 9,
+   "loss": 116135.4,
+   "ced": 9097.89
+  }
+ },
+ "defects": [
+  {
+   "fixture_id": "DF-001",
+   "validator_code": "DQ-001",
+   "file_name": "policy_exposure.csv",
+   "row_key": "EXP-POL-000001-2019",
+   "defect_type": "duplicate_exposure_id",
+   "expected_detection": "Reject or quarantine duplicate exposure key."
+  },
+  {
+   "fixture_id": "DF-002",
+   "validator_code": "DQ-002",
+   "file_name": "policy_exposure.csv",
+   "row_key": "EXP-POL-000002-2019",
+   "defect_type": "zero_exposure",
+   "expected_detection": "Flag non-positive exposure; do not divide or silently impute."
+  },
+  {
+   "fixture_id": "DF-003",
+   "validator_code": "DQ-003",
+   "file_name": "policy_exposure.csv",
+   "row_key": "EXP-POL-000003-2019",
+   "defect_type": "currency_mismatch",
+   "expected_detection": "Flag unsupported currency/unit or require an explicit conversion."
+  },
+  {
+   "fixture_id": "DF-004",
+   "validator_code": "DQ-004",
+   "file_name": "claim_header.csv",
+   "row_key": "CLM-ORPHAN-0001",
+   "defect_type": "orphan_claim_reference",
+   "expected_detection": "Flag claim with no matching exposure/policy record."
+  },
+  {
+   "fixture_id": "DF-005",
+   "validator_code": "DQ-005",
+   "file_name": "claim_development.csv",
+   "row_key": "CLM-0000001:3",
+   "defect_type": "negative_cumulative_paid",
+   "expected_detection": "Flag negative cumulative paid amount."
+  },
+  {
+   "fixture_id": "DF-006",
+   "validator_code": "DQ-006",
+   "file_name": "claim_development.csv",
+   "row_key": "CLM-0000738:12",
+   "defect_type": "duplicate_claim_development_key",
+   "expected_detection": "Flag duplicate claim_id + development_months key."
+  }
+ ],
+ "cred": {
+  "central": {
+   "Z": 0.875825461523539,
+   "raw": 0.059943941195623546,
+   "cred": 0.06158059308845498
+  },
+  "east": {
+   "Z": 0.8585566090123837,
+   "raw": 0.054059567961401184,
+   "cred": 0.056756133411716564
+  },
+  "north": {
+   "Z": 0.859405214351698,
+   "raw": 0.08981440251690596,
+   "cred": 0.08746784632297827
+  },
+  "south": {
+   "Z": 0.8656463876484269,
+   "raw": 0.07688364883325424,
+   "cred": 0.07637855258665197
+  },
+  "west": {
+   "Z": 0.8604261696612727,
+   "raw": 0.08649730932640741,
+   "cred": 0.08463077249098198
+  }
+ }
+}

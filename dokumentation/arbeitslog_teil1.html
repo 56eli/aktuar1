@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Arbeitslog – Opus 5.5 Aktuar-Präsentation</title>
+<style>
+body{font-family:Inter,system-ui,sans-serif;background:#F6F7F9;color:#1B2433;margin:0;line-height:1.55}
+main{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+h1{font-family:"Space Grotesk",system-ui,sans-serif;color:#0B2545;font-size:34px;margin:0 0 8px}
+.lead{color:#5A6475;margin:0 0 32px}
+details{background:#fff;border:1px solid #D5DAE1;border-radius:8px;margin:0 0 12px;padding:4px 18px}
+details[open]{border-color:#13807A}
+summary{cursor:pointer;font-weight:600;padding:12px 0;color:#0B2545}
+.tm{display:inline-block;min-width:56px;color:#13807A;font-variant-numeric:tabular-nums}
+details.tech{background:#F1F5F8;border:none;margin:8px 0 14px}
+details.tech summary{font-weight:500;color:#5A6475;font-size:15px}
+details.tech p{font-size:14px;font-family:ui-monospace,monospace;white-space:pre-wrap}
+pre{white-space:pre-wrap;font-size:14px;background:#F1F5F8;padding:16px;border-radius:6px}
+h2{font-size:20px;color:#0B2545;margin:36px 0 12px}
+</style></head><body><main>
+<h1>Arbeitslog</h1>
+<p class="lead">Wie Opus 5.5 die Präsentation „Kann eine KI aktuarielle Arbeit treu verrichten?“ erstellt hat. Jeder Schritt lässt sich aufklappen; technische Einzelheiten stecken eine Ebene tiefer. Uhrzeiten in MEZ, 21.11.2026.</p>
+<details><summary><span class="tm">22:08</span> Auftrag erhalten und eingeordnet</summary><p>Ziel festgelegt: eine Präsentation für einen Aktuar, mit eigener Prüfung des Projekts, aktuariellen Analysen, einem bewusst großen Grafikteil, Kritik, Ausblick und Kostenteil.</p><details class="tech"><summary>Technische Details</summary><p>Zeitmessung per Zeitstempel gestartet. Präsentationsformat: Slides-Vorlage von Claude (16:9).</p></details></details><details><summary><span class="tm">22:09</span> Projekt geladen und gelesen</summary><p>README, Testplan (Abschnitte 7–9: Kennzahlen, Szenarien, Präsentations- und Diagrammanforderungen), Audit vom 20.11.2026 und Datenschema aller Tabellen gelesen.</p><details class="tech"><summary>Technische Details</summary><p>git clone --depth 1; 41 Dateien, 5,5 MB. Tabellen: policy_exposure (12.000), claim_header (738), claim_development (3.495), reinsurance_treaties (2), market_curve (336), catastrophe_events (3), scenario_catalog (6); Referenz: claim_ultimate_truth, policy_year_truth.</p></details></details><details><summary><span class="tm">22:11</span> Mitgelieferte Prüfungen ausgeführt</summary><p>Alle Tests bestanden, Datenprüfung ohne Fehler, Benchmark reproduzierbar.</p><details class="tech"><summary>Technische Details</summary><p>unittest 4/4 OK; validate_dataset.py clean → PASS; run_benchmark.py → PASS (Bytevergleich, Datenqualität, Kontrollsummen).</p></details></details><details><summary><span class="tm">22:12</span> Analyseprogramm geschrieben</summary><p>Ein Programm rechnet alle aktuariellen Verfahren und erzeugt daraus sämtliche Grafiken – keine Zahl wurde von Hand übertragen.</p><details class="tech"><summary>Technische Details</summary><p>Python 3.11, pandas/numpy/scipy/matplotlib. Selbst implementiert: Poisson-GLM per IRLS, Mack-Standardfehler, Bornhuetter-Ferguson, Bühlmann-Straub, Compound-Poisson-Monte-Carlo (20.000 Jahre) mit XL je Schaden, Stressfunktion, SCR-Aggregation mit Korrelationsmatrix. Seed 20261121.</p></details></details><details><summary><span class="tm">22:14</span> Datenfehler entdeckt</summary><p>Die Zahlungsfaktoren wirkten unplausibel. Die Untersuchung ergab: Jede letzte Diagonale springt, weil der Generator offene Schäden am letzten Bewertungspunkt schließt; außerdem fehlt der 48-Monats-Bewertungspunkt.</p><details class="tech"><summary>Technische Details</summary><p>Paid-CL-Endschaden 3.216 T€ vs. Referenz 2.572 T€. development_months ∈ {3,6,12,24,36,60,72}. Paid-Faktoren ohne letzte Diagonale: 2,732, 1,345, 1,199, 1,000, 1,083, 1,000.</p></details></details><details><summary><span class="tm">22:15</span> Grafiken kontrolliert und korrigiert</summary><p>Alle 36 Grafiken als Übersicht gerendert und angesehen. Überlappende Beschriftungen, abgeschnittene Werte und zwei inhaltlich falsche Titel korrigiert.</p><details class="tech"><summary>Technische Details</summary><p>Korrekturen: GLM-Titel &#x27;Dreifache&#x27; → &#x27;fast doppelte&#x27; (Relativität 1,93); Tornado-Titel Inflation → Kumul als Haupttreiber; Frequenzsensitivität von Prämie entkoppelt; Kumul-SCR-Proxy aus reiner Kumulsimulation statt Gesamtverteilung.</p></details></details><details><summary><span class="tm">22:20</span> Präsentation aufgebaut</summary><p>Folien im Slides-Format gesetzt: Einleitung, Projektprüfung, Analyse, Grafik-Atlas, Ausblick, Kosten, Referenzen, Arbeitslog.</p><details class="tech"><summary>Technische Details</summary><p>36 PNG-Grafiken (1800 px Breite) als Bild-Assets hochgeladen; Schriften Inter und Space Grotesk; Farbpalette farbfehlsichtigkeitsfreundlich (Blau/Petrol/Orange).</p></details></details><details><summary><span class="tm">22:30</span> Gegenprüfung und Veröffentlichung</summary><p>Kennzahlen auf den Folien mit der Ergebnisdatei abgeglichen, Folien in der Vorschau geprüft, veröffentlicht.</p><details class="tech"><summary>Technische Details</summary><p>Jede Zahl stammt aus results.json des Analyselaufs.</p></details></details>
+<h2>Arbeitsanweisung im Wortlaut</h2>
+<details><summary>Anweisung von Onkel KI anzeigen</summary><pre>ich möchte gerne einem Freund der bei einer Versicherung arbeitet veranschaulichen wozu du in der Lage bist anhand eines spezifischen Themenbereichs, namentlich der Risikobewertung Nicht-Leben in der Aktuartätigkeit bei Versicherungen.
+
+Ich habe mit zwei kostenlosen Arena.ai agenten eine Aktuartestrepo erstellt die hoffentlich repräsentativ für Aktuartätigkeiten ist. Hier zu finden github.com/56eli/aktuartestrepo/
+
+Ziel ist es zu veranschaulichen ob du Opus 5.5 (Denkstufe: Mittel - um mein Guthaben zu schonen) treu Aktuartätigkeiten verrichten und unterstützen kannst.
+
+Deliverable ist ein Artifakt zu kreieren, welches ich mit Aktuarfreund teilen werde. Dieses Artifakt soll eine professionell angefertigte Präsentation sein die Firmenstandards entspricht.
+Notiere deinen Arbeitsprozess, zum menschlichen nachvollziehen.
+
+Die Einleitung sollte einem roten Faden folgen
+&quot;Hallo Aktuarfreund,
+ich bin Opus 5.5, eines der modernsten KI modelle und Onkel KI hat mich damit beauftragt dieses Dokument anzufertigen, um meine Fähigkeiten zu veranschaulichen.&quot;
+Die Einleitung sollte nennen, dass ich ohne Fachkenntnisse diese repo erschaffen habe und es ist dir überlassen diese im Verlauf deiner Arbeit zu kritisieren, falls sie Fehler aufweist. Nenne auch, dass du einer einzigen Arbeitsanweisung gefolgt bist, um das Artifakt abzuliefern.
+Benutze nicht Wörter wie artifact, deliverable oder repository, sondern Dokument/Präsentation/Projekt.
+
+In dem set run sollte eine sub-sektion sein die nur auf grafische Darstellungen spezialisiert ist. Ich persönlich weiß nicht, welche Form von Darstellungen, Grafiken, Graphen und visuelle Modelle benutzt werden in der Aktuartätigkeit, aber ich möchte, dass du alle ausfindig machst und visuell ausschöpfst, damit deine volle Bandbreite, Präsentationen für Aktuartätigkeiten anzufertigen, dargestellt wird.
+
+Die sub-sektion darf übergroß (und somit unprofessionell) wirken, um alle Grafikarten darzustellen.
+Benutze nicht meine Worte sondern standard-deutsche Worte die den Sinn veranschaulichen.
+
+Erkläre ihm gerne was noch möglich wäre, und wenn relevant die Limitationen meiner Arbeitsanweisung.
+In der Schlusssektion soll genannt werden &quot;Onkel Ki bezahlt €21.42 im Monat für Claude Pro. Diese Aufgabe hat x% des wöchentlichen Abonnement verbraucht, was y€ Kosten entspricht. Die Anfertigung dieses Dokuments hat hh:mm:ss gedauert. Diese Aufgabe könnte z weitere Male pro Monat ausgeführt werden.
+Dies ist eine Einmalaufgabe.
+Durch steering könnte folgendes erreicht werden:
+Durch Automatisierung könnte folgendes erreicht werden:&quot;
+
+Am Ende schließt es mit einer Referenzliste mit Prompt und repo ab, sowie einem vollständigen ausklappbaren Arbeitslog, menschlich zu verstehen.
+Halte sehr technische details der KI-Arbeit on-demand versteckt.
+Benutze fachspezifisches Deutsch für Aktuararbeit und reguläres Deutsch für KI Wirkungsweise und alles was mich, Onkel KI, betrifft.
+
+Verbrauche nicht mehr 50% des 5-Stunden-limits. Sollte das 5-Stunden-Limit zwischenzeitlich auf 0 zurückgesetzt werden stelle sicher, dass du am Ende nicht mehr als 50% übergreifend verbraucht hast.
+Solltest du 45% erreicht haben schreib mir einen Fortschrittsbericht und erwarte eine weitere Anweisung.
+
+Du kannst diese Details gerne im Artifakt nennen.
+</pre></details>
+<h2>Quellen</h2>
+<p>Projekt: <a href="https://github.com/56eli/aktuartestrepo">github.com/56eli/aktuartestrepo</a></p>
+</main></body></html>
