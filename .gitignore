@@ -1,0 +1,5 @@
+# Rohdaten werden beim Reproduzieren geladen, nicht versioniert
+**/daten/
+__pycache__/
+*.pyc
+.DS_Store
